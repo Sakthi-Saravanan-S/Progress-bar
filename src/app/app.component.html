@@ -1,0 +1,40 @@
+<div class="header-container"><h2>PROGRESS LEVEL TASK</h2></div>
+<div class="body-container">
+  <div class="input-container">
+    <div class="input-block">
+      <form [formGroup]="progressForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label class="required">Progress Level</label>
+          <input
+            type="text"
+            (keypress)="allowOnlyNumbers($event)"
+            formControlName="progress"
+            maxlength="3"
+          />
+          <span *ngIf="showFormError">
+            <span class="error-note" *ngIf="bar.errors && bar.errors.required"
+              >Please enter a progress level</span
+            >
+            <span class="error-note" *ngIf="bar.errors && bar.errors.max"
+              >Please enter a number between 0 to 100</span
+            >
+          </span>
+        </div>
+        <div>
+          <button type="submit">Set Progress Level</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="image-container">
+    <img
+      appProgressLevel
+      [progressLevel]="progressPercent"
+      class="sample-image"
+      src="assets/dummy-user.png"
+      alt="Image not found"
+      width="300"
+      height="300"
+    />
+  </div>
+</div>
