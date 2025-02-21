@@ -23,8 +23,8 @@ Ensure you have the following installed on your system:
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
-   cd sakthi-unimity-task
+   git clone https://github.com/Sakthi-Saravanan-S/Progress-bar.git
+   cd Progress-bar
    ```
 2. Install dependencies:
    ```sh
@@ -76,3 +76,10 @@ npm run e2e
 |-- package.json
 |-- README.md
 ```
+
+## Contribution
+Feel free to fork the repository and create pull requests for enhancements or bug fixes.
+
+## License
+This project is licensed under the MIT License.
+
