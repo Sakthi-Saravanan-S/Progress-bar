@@ -1,27 +1,78 @@
-# Progres Bar - Unimity
+# Progress Bar Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+## Overview
+This is an Angular 11 application that dynamically displays a progress bar based on user input. The user can enter a value, and the progress bar will visually represent the percentage of completion.
 
-## Development server
+## Features
+- User input-based progress bar
+- Real-time progress updates
+- Responsive UI using Angular framework
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies Used
+- **Angular 11** for frontend development
+- **RxJS** for handling reactive state management
+- **TypeScript** for structured JavaScript development
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
+Ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (Recommended: v12 or later)
+- [Angular CLI](https://angular.io/cli) (Version 11.2.0)
 
-## Build
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   cd sakthi-unimity-task
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Running the Application
+Start the development server with the following command:
+```sh
+npm start
+```
+This will start the Angular development server at `http://localhost:4200/`.
 
-## Running unit tests
+### Building the Application
+To generate a production-ready build:
+```sh
+npm run build
+```
+The output will be in the `dist/` directory.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Running Tests
+Unit tests:
+```sh
+npm run test
+```
+End-to-end tests:
+```sh
+npm run e2e
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Project Structure
+```
+|-- src/
+|   |-- app/
+|   |   |-- progress-bar/
+|   |   |   |-- progress-bar.component.ts
+|   |   |   |-- progress-bar.component.html
+|   |   |   |-- progress-bar.component.scss
+|   |   |-- progress-directive/
+|   |   |   |-- progress-level.directive.ts
+|   |   |-- app.component.ts
+|   |-- assets/
+|   |   |-- dummy-user.png
+|   |-- environments/
+|   |   |-- environment.ts
+|   |-- main.ts
+|   |-- index.html
+|-- angular.json
+|-- package.json
+|-- README.md
+```
