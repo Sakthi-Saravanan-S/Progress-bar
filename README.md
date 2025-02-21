@@ -76,10 +76,3 @@ npm run e2e
 |-- package.json
 |-- README.md
 ```
-
-## Contribution
-Feel free to fork the repository and create pull requests for enhancements or bug fixes.
-
-## License
-This project is licensed under the MIT License.
-
